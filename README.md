@@ -1,4 +1,4 @@
-## About This Script (Revamped for Version 1.1.2)
+## About This Script (Revamped for Version 1.2)
 This FiveM script provides a fully optimized and immersive experience for vehicle engine management, packed with new features and improvements to enhance gameplay. Designed with performance, customization, and realism in mind, it’s an ideal addition to any server.
 
 ### Features

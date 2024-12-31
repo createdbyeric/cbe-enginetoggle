@@ -50,4 +50,14 @@ All features are customizable via the `config.lua` file:
 
 ---
 
+### Upcoming Planned Features
+
+1. **Configurable Engine Control on Long Press Exit**:
+   - Add a new configuration option to allow the engine to remain running only when the player uses a long press of the exit key.
+   - This will provide more precise control over engine behavior based on player interaction.
+
+2. **Enable/Disable Seat Shuffle**:
+   - Introduce a configurable option to toggle seat shuffling on or off.
+   - Players can prevent automatic seat changes when entering or exiting a vehicle, enhancing roleplay realism. 
+
 This script aims to enhance player immersion and control while maintaining optimal performance. Customize the settings in `config.lua` to fit your server's needs! 🚗✨

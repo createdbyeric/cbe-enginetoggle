@@ -43,11 +43,11 @@ This FiveM script provides a fully optimized and immersive experience for vehicl
 - `Long Press Exit:` Hold the exit key (`F` by default) for a configurable duration to exit the vehicle with the door open.
 
 ## Known Bugs
-- `EngineAlwaysOn` config setting not working therfor `EngineAlwaysOn` state is set to true.
+- <del>`EngineAlwaysOn` config setting not working therfor `EngineAlwaysOn` state is set to true.</del> *Fixed in v1.2
 
-- `Vehicle Turn Off on Exit:` In some cases, the vehicle may unintentionally turn off when the player exits.
+- <del>`Vehicle Turn Off on Exit:` In some cases, the vehicle may unintentionally turn off when the player exits.</del> *Fixed in v1.2
   
-- `Vehicle Light Flickering:` The vehicle's lights may briefly flicker on and off during exit.
+- <del>`Vehicle Light Flickering:` The vehicle's lights may briefly flicker on and off during exit.</del> *Fixed in v1.2
 
 ### Planned Features
 
@@ -57,9 +57,9 @@ This FiveM script provides a fully optimized and immersive experience for vehicl
 
 - `Start/Stop Feature:` Add a command-based start/stop engine toggle with player-adjustable configurations.
 
-- `OneSync Support:` Ensure full compatibility with OneSync servers for better network synchronization.
+- <del>`OneSync Support:` Ensure full compatibility with OneSync servers for better network synchronization.</del> *Added with v1.2
 
-- `Code Restructuring and Performance Fixes:` Underline further performance enhancements and code refactoring for improved efficiency and maintainability.
+- <del>`Code Restructuring and Performance Fixes:` Underline further performance enhancements and code refactoring for improved efficiency and maintainability.</del> *Added with v1.2
 
 
 This script prioritizes performance, immersion, and flexibility, making it an invaluable tool for any FiveM server. Fully customizable to suit your server's needs, it ensures a superior vehicle engine control experience for your players!

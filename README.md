@@ -1,24 +1,53 @@
-# FiveM Engine Toggle Script
-Simple script to engable users to toggle their engines on or off using a /eng command.
+### About This Script
 
-This FiveM resource adds a simple engine toggle system that allows players to turn their vehicle engines on or off using the /eng command. The script includes configurable options for enhanced flexibility.
+This FiveM script provides enhanced control over vehicle engines, offering players a more immersive and customizable experience. It includes the following features:
 
-### Features
-- Toggle Engine State: Players can turn their vehicle engine on or off with a single command.
-- Driver Restriction (Configurable): Optionally restrict engine toggling to the driver only.
-- Control Blocking (Configurable): Prevent acceleration and braking if the engine is off.
+---
 
-### Installation
-- Download this repository into your FiveM server's resources folder
-- Add the resource to your server.cfg
-- ensure engine-toggle
+### **Features**
+1. **Engine Toggle (`/eng`)**:
+   - Players can toggle the vehicle engine state with a simple command.
+   - Configurable to allow only the driver to toggle the engine.
 
-### Configuration
-- The resource includes a config.lua file for customization
-- ToggleEngineDriverOnly: Set to true to restrict the /eng command to the driver, or false to allow all passengers to use it.
-- BlockControlsIfEngineOff: Set to true to disable acceleration and braking when the engine is off, or false to leave controls unaffected.
+2. **Engine State Persistence**:
+   - Automatically saves the engine state when exiting a vehicle.
+   - Restores the engine state when re-entering the same vehicle.
 
-### Usage
-- Use /eng in-game to toggle your vehicle's engine on or off.
-- Tested with the latest FiveM framework.
-- Requires no additional dependencies.
+3. **Engine Always-On Mode**:
+   - Option to keep the engine running after exiting the vehicle.
+   - Prevents unintended engine shutdowns.
+
+4. **Control Block for Engine Off**:
+   - Disables acceleration and braking when the engine is off.
+   - Prevents auto-start behavior for a more realistic experience.
+
+5. **Long Press Exit**:
+   - Players can hold the exit key to leave the vehicle with the door open.
+   - Configurable hold duration for triggering the action.
+
+6. **Efficient State Cleanup**:
+   - Periodic removal of invalid or outdated vehicle state data.
+   - Ensures optimized performance and memory usage.
+
+---
+
+### **Configuration Options**
+All features are customizable via the `config.lua` file:
+- **ToggleEngineDriverOnly**: Restrict engine toggling to the driver.
+- **BlockControlsIfEngineOff**: Disable driving controls if the engine is off.
+- **SaveEngineState**: Save and restore the engine state.
+- **EngineAlwaysOn**: Keep the engine running when exiting the vehicle.
+- **AllowLongPressExit**: Enable the long-press exit feature.
+- **LongPressDuration**: Set the duration (in milliseconds) required to trigger the long-press action.
+
+---
+
+### **Usage**
+1. **Engine Toggle**:
+   - Use `/eng` in the chat to turn the vehicle engine on or off.
+2. **Long Press Exit**:
+   - Hold the exit key (`F` by default) to leave the vehicle with the door open.
+
+---
+
+This script aims to enhance player immersion and control while maintaining optimal performance. Customize the settings in `config.lua` to fit your server's needs! 🚗✨

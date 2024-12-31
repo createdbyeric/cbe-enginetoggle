@@ -43,6 +43,8 @@ This FiveM script provides a fully optimized and immersive experience for vehicl
 - `Long Press Exit:` Hold the exit key (`F` by default) for a configurable duration to exit the vehicle with the door open.
 
 ## Known Bugs
+- `EngineAlwaysOn` config setting not working therfor `EngineAlwaysOn` state is set to true.
+
 - `Vehicle Turn Off on Exit:` In some cases, the vehicle may unintentionally turn off when the player exits.
   
 - `Vehicle Light Flickering:` The vehicle's lights may briefly flicker on and off during exit.

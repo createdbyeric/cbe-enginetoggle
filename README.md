@@ -60,4 +60,4 @@ This FiveM script provides a fully optimized and immersive experience for vehicl
 - `Code Restructuring and Performance Fixes:` Underline further performance enhancements and code refactoring for improved efficiency and maintainability.
 
 
-This script prioritizes performance, immersion, and flexibility, making it an invaluable tool for any FiveM server. Fully customizable to suit your server's needs, it ensures a superior vehicle engine control experience for your players! �✨
+This script prioritizes performance, immersion, and flexibility, making it an invaluable tool for any FiveM server. Fully customizable to suit your server's needs, it ensures a superior vehicle engine control experience for your players!

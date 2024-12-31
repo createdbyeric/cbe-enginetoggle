@@ -1,63 +1,73 @@
-### About This Script
+## About This Script (Revamped for Version 1.1.2)
+This FiveM script provides a fully optimized and immersive experience for vehicle engine management, packed with new features and improvements to enhance gameplay. Designed with performance, customization, and realism in mind, it’s an ideal addition to any server.
 
-This FiveM script provides enhanced control over vehicle engines, offering players a more immersive and customizable experience. It includes the following features:
+### Features
+- Engine Toggle (/eng)
+- Toggle the vehicle engine on or off using the /eng command.
+- Configurable to allow only the driver to control the engine state.
+- Engine State Persistence
+- Automatically saves the engine state when exiting a vehicle.
+- Restores the exact engine state when re-entering the same vehicle for seamless continuity.
+- Engine Always-On Option
+- Option to keep the engine running after exiting the vehicle.
+- Prevents unintended engine shutdowns, maintaining immersion during roleplay scenarios.
+- Improved Control Blocking
+- Disables acceleration, braking, and turning controls when the engine is off.
+- Ensures realistic engine-off behavior and prevents accidental auto-starts.
+- Long Press Exit: Hold the exit key (`F` by default) to leave the vehicle with the door open. Configurable hold duration, offering flexibility to server administrators.
+- Enhanced Performance
+- Optimized resource usage with restructured threads and reduced frame impact.
+- Vehicle state monitoring and cleanup run at strategic intervals to ensure smooth gameplay.
+- Periodic Cleanup of Engine States
+- Automatically removes outdated or invalid vehicle state data every 10 seconds.
+- Keeps memory usage low and server performance high.
 
----
+### Configuration Options
+All features can be customized in the config.lua file:
 
-### **Features**
-1. **Engine Toggle (`/eng`)**:
-   - Players can toggle the vehicle engine state with a simple command.
-   - Configurable to allow only the driver to toggle the engine.
+- `ToggleEngineDriverOnly:` Restrict engine toggling to the driver.
 
-2. **Engine State Persistence**:
-   - Automatically saves the engine state when exiting a vehicle.
-   - Restores the engine state when re-entering the same vehicle.
+- `BlockControlsIfEngineOff:` Disable driving controls when the engine is off.
 
-3. **Engine Always-On Mode**:
-   - Option to keep the engine running after exiting the vehicle.
-   - Prevents unintended engine shutdowns.
+- `SaveEngineState:` Save and restore engine states automatically.
 
-4. **Control Block for Engine Off**:
-   - Disables acceleration and braking when the engine is off.
-   - Prevents auto-start behavior for a more realistic experience.
+- `EngineAlwaysOn:` Keep the engine running when a player exits the vehicle.
 
-5. **Long Press Exit**:
-   - Players can hold the exit key to leave the vehicle with the door open.
-   - Configurable hold duration for triggering the action.
+- `AllowLongPressExit:` Enable or disable the long-press exit feature.
 
-6. **Efficient State Cleanup**:
-   - Periodic removal of invalid or outdated vehicle state data.
-   - Ensures optimized performance and memory usage.
+- `LongPressDuration:` Set the duration (in milliseconds) required to trigger the long-press action.
 
----
+### Usage
 
-### **Configuration Options**
-All features are customizable via the `config.lua` file:
-- **ToggleEngineDriverOnly**: Restrict engine toggling to the driver.
-- **BlockControlsIfEngineOff**: Disable driving controls if the engine is off.
-- **SaveEngineState**: Save and restore the engine state.
-- **EngineAlwaysOn**: Keep the engine running when exiting the vehicle.
-- **AllowLongPressExit**: Enable the long-press exit feature.
-- **LongPressDuration**: Set the duration (in milliseconds) required to trigger the long-press action.
+Toggle Engine:
+- Use the /eng command in the chat to turn the engine on or off.
 
----
+Long Press Exit:
+- Hold the exit key (F by default) for a configurable duration to exit the vehicle with the door open.
 
-### **Usage**
-1. **Engine Toggle**:
-   - Use `/eng` in the chat to turn the vehicle engine on or off.
-2. **Long Press Exit**:
-   - Hold the exit key (`F` by default) to leave the vehicle with the door open.
+## Known Bugs
+Vehicle Turn Off on Exit:
+- In some cases, the vehicle may unintentionally turn off when the player exits.
+  
+Vehicle Light Flickering:
+- The vehicle's lights may briefly flicker on and off during exit.
 
----
+### Planned Features
 
-### Upcoming Planned Features
+Configurable Seat Shuffle:
+- Add a configuration option to enable or disable seat shuffling for better roleplay immersion.
 
-1. **Configurable Engine Control on Long Press Exit**:
-   - Add a new configuration option to allow the engine to remain running only when the player uses a long press of the exit key.
-   - This will provide more precise control over engine behavior based on player interaction.
+Engine on Long Press Exit:
+- Introduce a setting to allow the engine to remain running only when the exit key is long pressed.
 
-2. **Enable/Disable Seat Shuffle**:
-   - Introduce a configurable option to toggle seat shuffling on or off.
-   - Players can prevent automatic seat changes when entering or exiting a vehicle, enhancing roleplay realism. 
+Start/Stop Feature:
+- Add a command-based start/stop engine toggle with player-adjustable configurations.
 
-This script aims to enhance player immersion and control while maintaining optimal performance. Customize the settings in `config.lua` to fit your server's needs! 🚗✨
+OneSync Support:
+- Ensure full compatibility with OneSync servers for better network synchronization.
+
+Code Restructuring and Performance Fixes:
+- Underline further performance enhancements and code refactoring for improved efficiency and maintainability.
+
+
+This script prioritizes performance, immersion, and flexibility, making it an invaluable tool for any FiveM server. Fully customizable to suit your server's needs, it ensures a superior vehicle engine control experience for your players! �✨

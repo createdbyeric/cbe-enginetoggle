@@ -23,7 +23,6 @@ This FiveM script provides a fully optimized and immersive experience for vehicl
 - Keeps memory usage low and server performance high.
 
 ### Configuration Options
-All features can be customized in the config.lua file:
 
 - `ToggleEngineDriverOnly:` Restrict engine toggling to the driver.
 
@@ -39,35 +38,26 @@ All features can be customized in the config.lua file:
 
 ### Usage
 
-Toggle Engine:
-- Use the /eng command in the chat to turn the engine on or off.
+- `Toggle Engine`: Use the `/eng` command in the chat to turn the engine on or off.
 
-Long Press Exit:
-- Hold the exit key (F by default) for a configurable duration to exit the vehicle with the door open.
+- `Long Press Exit:` Hold the exit key (`F` by default) for a configurable duration to exit the vehicle with the door open.
 
 ## Known Bugs
-Vehicle Turn Off on Exit:
-- In some cases, the vehicle may unintentionally turn off when the player exits.
+- `Vehicle Turn Off on Exit:` In some cases, the vehicle may unintentionally turn off when the player exits.
   
-Vehicle Light Flickering:
-- The vehicle's lights may briefly flicker on and off during exit.
+- `Vehicle Light Flickering:` The vehicle's lights may briefly flicker on and off during exit.
 
 ### Planned Features
 
-Configurable Seat Shuffle:
-- Add a configuration option to enable or disable seat shuffling for better roleplay immersion.
+- `Configurable Seat Shuffle:` Add a configuration option to enable or disable seat shuffling for better roleplay immersion.
 
-Engine on Long Press Exit:
-- Introduce a setting to allow the engine to remain running only when the exit key is long pressed.
+- `Engine on Long Press Exit:` Introduce a setting to allow the engine to remain running only when the exit key is long pressed.
 
-Start/Stop Feature:
-- Add a command-based start/stop engine toggle with player-adjustable configurations.
+- `Start/Stop Feature:` Add a command-based start/stop engine toggle with player-adjustable configurations.
 
-OneSync Support:
-- Ensure full compatibility with OneSync servers for better network synchronization.
+- `OneSync Support:` Ensure full compatibility with OneSync servers for better network synchronization.
 
-Code Restructuring and Performance Fixes:
-- Underline further performance enhancements and code refactoring for improved efficiency and maintainability.
+- `Code Restructuring and Performance Fixes:` Underline further performance enhancements and code refactoring for improved efficiency and maintainability.
 
 
 This script prioritizes performance, immersion, and flexibility, making it an invaluable tool for any FiveM server. Fully customizable to suit your server's needs, it ensures a superior vehicle engine control experience for your players! �✨
